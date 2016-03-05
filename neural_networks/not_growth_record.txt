@@ -1,0 +1,2 @@
+Hidden Units, val_err
+2, 0.521716980376

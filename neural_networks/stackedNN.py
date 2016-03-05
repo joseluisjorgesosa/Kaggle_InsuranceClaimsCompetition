@@ -273,7 +273,7 @@ if __name__ == "__main__":
 	opts = {
 		'step_size' : .001,			#Step size for gradient updates
 		'momentum' :.9,
-		'num_epochs' : 20,			#Maximum number of epochs during training
+		'num_epochs' : 1,			#Maximum number of epochs during training
 		'batch_size' : 300,		#Batch size used during training
 
 	}
@@ -308,6 +308,9 @@ if __name__ == "__main__":
 	y_stack[0:len(traindf)] = y_train[0:]
 	y_stack[len(traindf):len(traindf)+len(valdf)] = y_val[0:]
 
+	for i in range(len(y_stack)):
+		print(y_stack[i])
+
 	#Combine prediction columns
 	X_stack = np.zeros((len(df),1,1))
 	X_stack[0:len(traindf),0,0] = predictions2[0:,1]
@@ -317,13 +320,19 @@ if __name__ == "__main__":
 	all_stack[0:len(df),0,0] = y_stack
 	all_stack[0:len(df),0,1] = X_stack[0:,0,0]
 
+
+	########################################################################
+	# TODO: APPEND LABELS TO DATA, TRAIN ON IT 							#
+	# THEN APPEND PREDICTIONS FOR X_TEST TO X_TEST AND TRAIN ON X_test  #
+	########################################################################
+
 	#Now complete stack trainig
 
 	#Set paramters
 	opts = {
-		'step_size' : .001,			#Step size for gradient updates
+		'step_size' : .0001,			#Step size for gradient updates
 		'momentum' :.9,
-		'num_epochs' : 20,			#Maximum number of epochs during training
+		'num_epochs' : 4,			#Maximum number of epochs during training
 		'batch_size' : 300,		#Batch size used during training
 
 	}

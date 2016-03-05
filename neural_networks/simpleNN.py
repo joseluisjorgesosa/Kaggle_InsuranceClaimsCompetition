@@ -1,15 +1,16 @@
 import sys
 import pandas as pd
 from sklearn import preprocessing
+from sklearn.preprocessing import normalize
 from sklearn.cross_validation import train_test_split
-
+import matplotlib.pyplot as plt
 import time 
 import theano
 import theano.tensor as T
 import numpy as np
 import lasagne
-
 floatX = theano.config.floatX
+
 
 #Function: load_data
 def load_data(data_file):
@@ -85,81 +86,32 @@ def get_test_data(test_data_filename):
 
 	return X_test, ids_test
 
+
 def build_mlp(numFeatures):
 
-	network = lasagne.layers.InputLayer(shape=(None,1,numFeatures))
-
+	network = lasagne.layers.InputLayer(shape=(None,1,numFeatures),bias=lasagne.init.Constant(1))
 	input_var = network.input_var
-
-	network = lasagne.layers.ScaleLayer(network, 
-				scales=lasagne.init.Constant(1))
-
-	network = lasagne.layers.DenseLayer(
-				network, num_units=500,
-				nonlinearity=lasagne.nonlinearities.rectify,
-				W=lasagne.init.GlorotUniform(),b=lasagne.init.Constant(0.))
 
 	network = lasagne.layers.BiasLayer(network, 
-				b=lasagne.init.Constant(0))
+				b=lasagne.init.Constant(-1))
 
 	network = lasagne.layers.DenseLayer(
-				network, num_units=500,
-				nonlinearity=lasagne.nonlinearities.sigmoid,
-				W=lasagne.init.GlorotUniform(),b=lasagne.init.Constant(0.))
-
-	network = lasagne.layers.NonlinearityLayer(network, 
-		nonlinearity=lasagne.nonlinearities.rectify)
-
-	network = lasagne.layers.DenseLayer(
-		network, num_units=2,
-		nonlinearity=lasagne.nonlinearities.softmax)
-
-	return input_var, network
-
-# Function: build_custom_mlp	
-# Description: Builds a custom mlp based on the Lasagne documentation
-#
-# Creates a neural net with the following specified by a user:
-#	
-#		-number of input features 
-#		-number of hidden layers
-#		-hidden units
-#		-input dropout (boolean)
-#		-hidden dropout (boolean)
-
-def build_custom_mlp(numFeatures,  drop_input = False, hidden_layers=1, hidden_units=800, drop_hidden=False, bias=False):
-	
-	network = lasagne.layers.InputLayer(shape=(None,1,numFeatures))
-	
-	input_var = network.input_var
-
-	if drop_input:
-		network = lasagne.layers.DropoutLayer(network, p=0.2)
-
-
-
-	for i in range(hidden_layers):
-		if bias:
-			network = lasagne.layers.DenseLayer(
-				network, num_units=hidden_units,
-				nonlinearity=lasagne.nonlinearities.rectify,
-				W=lasagne.init.GlorotUniform(),b=lasagne.init.Constant(0.))
-		else:
-			network = lasagne.layers.DenseLayer(
-				network, num_units=hidden_units,
-				nonlinearity=lasagne.nonlinearities.rectify,
+				network, num_units=131,
+				nonlinearity=lasagne.nonlinearities.linear,
 				W=lasagne.init.GlorotUniform())
 
-		if drop_hidden:
-			network = lasagne.layers.DropoutLayer(network, p=0.5)
+	network = lasagne.layers.DenseLayer(
+				network, num_units=250,
+				nonlinearity=lasagne.nonlinearities.ScaledTanH(scale_in=1, scale_out=1.48),
+				W=lasagne.init.GlorotUniform())
 
+	network = lasagne.layers.DropoutLayer(network, p=0.4, rescale=True)
 
 	network = lasagne.layers.DenseLayer(
 		network, num_units=2,
 		nonlinearity=lasagne.nonlinearities.softmax)
 
 	return input_var, network
-
 
 # Function setup_network
 # Description: Builds a neural net as specfied by input_var and opts. 
@@ -169,37 +121,18 @@ def build_custom_mlp(numFeatures,  drop_input = False, hidden_layers=1, hidden_u
 #
 def setup_network(df, target_var, opts):
 
-	#Build custom netowrk
-	if(opts['customNet'] == True):
-		input_var, network = build_custom_mlp(len(df.columns[1:]), opts['drop_input'], opts['hidden_layers'], opts['hidden_units'], opts['drop_hidden'],opts['bias'])
-	else:
-		input_var, network = build_mlp(len(df.columns[1:]))
+	input_var, network = build_mlp(len(df.columns[1:]))
 
 	#create loss function 
 	prediction = lasagne.layers.get_output(network)
 	loss = lasagne.objectives.categorical_crossentropy(prediction, target_var)
-
-	if(opts['L2Regularization'] == False):
-		loss = loss.mean()
-	else:
-		loss = loss.mean()+ opts['alpha'] * lasagne.regularization.regularize_network_params( network, lasagne.regularization.l2)
+	loss = loss.mean()+ opts['alpha'] * lasagne.regularization.regularize_network_params( network, lasagne.regularization.l2)
 
 	# create parameter update expressions
 	params = lasagne.layers.get_all_params(network, trainable=True)
+	updates = lasagne.updates.adagrad(loss, params, learning_rate=opts['step_size'], epsilon=opts['epsilon'])
 
-	if(opts['updateFunction'] == 'SGD'):
-		updates = lasagne.updates.sgd(loss, params, learning_rate=opts['step_size'])
 
-	elif(opts['updateFunction'] == 'Adagrad'):
-		updates = lasagne.updates.adagrad(loss, params, learning_rate=opts['step_size'], epsilon=opts['epsilon'])
-
-	elif(opts['updateFunction'] == 'Adamax'):
-		#Recomended step size = .002, beta1 =.9, beta2=.999, epsilon = 1e-8
-		updates = lasagne.updates.adamax(loss, params, learning_rate=opts['step_size'], beta1=opts['beta1'], beta2=opts['beta2'], epsilon=opts['epsilon'])
-	
-	elif(opts['updateFunction'] == 'Adadelta'):
-		updates = lasagne.updates.adadelta(loss, params, learning_rate=opts['step_size'],  rho=opts['rho'], epsilon=opts['epsilon']) 
-	
 	# use trained network for predictions
 	test_prediction = lasagne.layers.get_output(network, deterministic=True)
 	test_loss = lasagne.objectives.categorical_crossentropy(test_prediction,target_var)
@@ -216,14 +149,19 @@ def setup_network(df, target_var, opts):
 
 	return network, train_fn, val_fn, input_var
 
-
 # Function: train_network
 # 
 # Description: trains the neural network based on a training function, validation function, and num_epochs value
 #
 def train_network(network,train_fn,val_fn, X_train,y_train, X_val,y_val,opts):
+	saved_validation_loss = np.empty(opts['num_epochs'])
+	saved_training_loss = np.empty(opts['num_epochs'])
+	
+	epoch = 0
+	prev_err = 10000000
+	delta_err = 1000000
 
-	for epoch in range(opts['num_epochs']):
+	while epoch < opts['num_epochs'] and delta_err > 1e-6:
 		train_err = 0
 		train_batches = 0
 		start_time = time.time()
@@ -244,15 +182,31 @@ def train_network(network,train_fn,val_fn, X_train,y_train, X_val,y_val,opts):
 			val_acc += acc
 			val_batches += 1
 
+		saved_validation_loss[epoch] = val_err
+		saved_training_loss[epoch] = train_err
 		print("Epoch {} of {} took {:.3f}s".format(
 			epoch + 1, opts['num_epochs'], time.time() - start_time))
 		print("  training loss:\t\t{:.6f}".format(train_err / train_batches))
 		print("  validation loss:\t\t{:.6f}".format(val_err / val_batches))
-		print("  validation accuracy:\t\t{:.2f} %".format(
+		print("  validation accuracy:\t\t{:.2f}%".format(
             val_acc / val_batches * 100))
 
+		delta_err = abs((train_err/train_batches) - (prev_err))
+		prev_err = (train_err/train_batches)
+		print("  delta err:\t\t{:.6f}".format(delta_err))
 
-	
+		epoch +=1
+
+	t = np.asarray(range(opts['num_epochs'])) 
+	s = saved_validation_loss
+	r = saved_training_loss
+	plt.plot(t, s,'r^',t,r,'b^')
+	plt.xlabel('Epoch')
+	plt.ylabel('Validation Error')
+	plt.title('Validation Error Over Neural Net Training')
+	plt.grid(True)
+	plt.savefig("testNN.png")
+	#plt.show()
 
 # ############################# Batch iterator ###############################
 # This is just a simple helper function iterating over training data in
@@ -305,9 +259,10 @@ def write_results_file(results_filename, predictions, ids_test):
 	results.write('ID,PredictedProb\n')
 
 	for i in range(len(ids_test)):
-		results.write(str(ids_test[i]) + "," + str(predictions[i]) + "\n")
+		results.write(str(ids_test[i]) + "," + str(predictions[i][1]) + "\n")
 
 	results.close()
+
 
 # Main is based off of code from example of neural net from Lasagne distribution
 # found at https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py#L213
@@ -316,23 +271,12 @@ if __name__ == "__main__":
 
 	#Set paramters
 	opts = {
-		'net1': False,				#If true uses a neural net that is predetermined
-		'customNet': True,			#If true uses a neural net specified by parameters below
-		'updateFunction':'Adamax',	#Select the update function (SGD, Adagrad, Adamax)
-		'L2Regularization': True,	#Determine if Regularization is used or not
-		'alpha' :  1e-3,			#L2 regularization scalar
-		'rho' : 1e-6,				#Rho (Adadelta)
-		'beta1' : .9,				#Beta 1 (Adamax)
-		'beta2' : .999,				#Beta 2 (Adamax)
-		'step_size' : 2e-3,			#Step size for gradient updates
-		'epsilon' : 1e-8,			#Used to control how quickly step size decreases for Adagrad/Adamax
-		'num_epochs' : 10,			#Maximum number of epochs during training
-		'batch_size' : 10,			#Batch size used during training
-		'hidden_layers' : 10,		#Total number of hidden layers
-		'hidden_units': 200,		#Hidden units in each layer
-		'drop_input' : False,		#Randomly remove a certain proportion of input units
-		'drop_hidden': True,		#Randomly remove a certain proportion of hidden units
-		'bias': True,				#Add bias into hidden layers
+		'alpha' :  0,			#L2 regularization scalar
+		'step_size' : .01,			#Step size for gradient updates
+		'epsilon' : 1e-8,			#Used to control how quickly step size decreases for adadelta
+		'num_epochs' : 100,			#Maximum number of epochs during training
+		'batch_size' : 50,		#Batch size used during training
+
 	}
 
 	print("Loading training data...")
@@ -340,9 +284,8 @@ if __name__ == "__main__":
 	Training_Data_File = sys.argv[1]
 	X_train, y_train, X_val, y_val, df = get_training_data(Training_Data_File)
 
-
 	# Prepare Theano variables
-	target_var = T.ivector('targets')
+	target_var = T.ivector('target')
 
 	print("Setting up network...")
 	#setup Network

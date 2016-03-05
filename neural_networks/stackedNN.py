@@ -42,10 +42,10 @@ def load_data(data_file):
 #Description: Loads the data and then puts it into numpy arrays
 #
 # Returns training and validation data to user
-def get_training_data(training_file): 
+def get_training_data(training_file,split): 
 	ids_train, df = load_data(training_file)
 
-	traindf, valdf = train_test_split(df, test_size = 0.2)
+	traindf, valdf = train_test_split(df, test_size = split)
 
 	features = list(traindf.columns[1:])
 	labels = traindf.columns[0]
@@ -67,7 +67,7 @@ def get_training_data(training_file):
 	y_val = np.array(valdf[labels])
 	y_val = y_val.astype('int32')
 
-	return X_train, y_train, X_val, y_val, df
+	return X_train, y_train, X_val, y_val, valdf,traindf, df
 
 #Function: get_test_data
 #
@@ -121,9 +121,9 @@ def build_mlp(numFeatures):
 # 
 # Returns network, training function, and validation function to user.
 #
-def setup_network(df, target_var, opts):
+def setup_network(NUM_FEATURES, target_var, opts):
 
-	input_var, network = build_mlp(len(df.columns[1:]))
+	input_var, network = build_mlp(NUM_FEATURES)
 
 	#create loss function 
 	prediction = lasagne.layers.get_output(network)
@@ -245,7 +245,6 @@ def get_predictions(network,input_var, X_test):
 
 	predictions = predict_function(X_test)
 
-	print(predictions.shape)
 	return predictions
 
 #Fucntion: write_results_file
@@ -274,7 +273,7 @@ if __name__ == "__main__":
 	opts = {
 		'step_size' : .001,			#Step size for gradient updates
 		'momentum' :.9,
-		'num_epochs' : 30,			#Maximum number of epochs during training
+		'num_epochs' : 20,			#Maximum number of epochs during training
 		'batch_size' : 300,		#Batch size used during training
 
 	}
@@ -282,22 +281,102 @@ if __name__ == "__main__":
 	print("Loading training data...")
 	#Load training data 			 
 	Training_Data_File = sys.argv[1]
-	X_train, y_train, X_val, y_val, df = get_training_data(Training_Data_File)
+	X_train, y_train, X_val, y_val,valdf, traindf, df = get_training_data(Training_Data_File, split=.5)
+
+	# Prepare Theano variables
+	target_var1 = T.ivector('target')
+	target_var2 = T.ivector('target')
+
+	print("Setting up network...")
+	#setup Network
+	NUM_FEATURES = len(traindf.columns[1:]) 
+	network1, train_fn1, val_fn1, input_var1 = setup_network(NUM_FEATURES, target_var1, opts)
+	network2, train_fn2, val_fn2, input_var2 = setup_network(NUM_FEATURES, target_var2, opts)
+
+	print("Starting training...")
+	#train network
+	train_network(network1,train_fn1,val_fn1,X_train, y_train, X_val, y_val, opts)
+	train_network(network2,train_fn2,val_fn2,X_val, y_val, X_train, y_train, opts)
+
+	print("Making predictions...")
+	predictions1 = get_predictions(network1,input_var1, X_val)
+	predictions2 = get_predictions(network2,input_var2, X_train)
+
+
+	#Combine labels again
+	y_stack = np.zeros(len(df))
+	y_stack[0:len(traindf)] = y_train[0:]
+	y_stack[len(traindf):len(traindf)+len(valdf)] = y_val[0:]
+
+	#Combine prediction columns
+	X_stack = np.zeros((len(df),1,1))
+	X_stack[0:len(traindf),0,0] = predictions2[0:,1]
+	X_stack[len(traindf):len(traindf)+len(valdf),0,0] = predictions1[0:,1]
+
+	all_stack = np.zeros((len(df),1,2))
+	all_stack[0:len(df),0,0] = y_stack
+	all_stack[0:len(df),0,1] = X_stack[0:,0,0]
+
+	#Now complete stack trainig
+
+	#Set paramters
+	opts = {
+		'step_size' : .001,			#Step size for gradient updates
+		'momentum' :.9,
+		'num_epochs' : 20,			#Maximum number of epochs during training
+		'batch_size' : 300,		#Batch size used during training
+
+	}
+
+	stack_train, stack_val = train_test_split(all_stack, test_size = 0.2)
+
+	X_stack_val = np.zeros((len(stack_val),1,1))
+	X_stack_val[0:len(stack_val),0,0] = stack_val[0:,0,1]
+	X_stack_val = X_stack_val.astype(floatX)
+
+	y_stack_val = stack_val[0:,0,1].astype('int32')
+
+	X_stack_train = np.zeros((len(stack_train),1,1))
+	X_stack_train[0:len(stack_train),0,0] = stack_train[0:,0,1]
+	X_stack_train = X_stack_train.astype(floatX)
+
+	y_stack_train = stack_train[0:,0,1].astype('int32')
+
+	# Prepare Theano variables
+	target_var_stack = T.ivector('target')
+
+	print("Setting up stack network...")
+	
+	#setup Network 
+	network_stack, train_fn_stack, val_fn_stack, input_var_stack = setup_network(1, target_var_stack, opts)
+
+	print("Starting training...")
+	#train network
+	train_network(network_stack,train_fn_stack,val_fn_stack,X_stack_train, y_stack_train, X_stack_val, y_stack_val, opts)
+
+
+	#Now complete full training
+	#Set paramters
+	opts = {
+		'step_size' : .001,			#Step size for gradient updates
+		'momentum' :.9,
+		'num_epochs' : 20,			#Maximum number of epochs during training
+		'batch_size' : 300,		#Batch size used during training
+
+	}
+
+	X_train, y_train, X_val, y_val,valdf, traindf, df = get_training_data(sys.argv[1], 0.2)
 
 	# Prepare Theano variables
 	target_var = T.ivector('target')
 
 	print("Setting up network...")
 	#setup Network
-	network, train_fn, val_fn, input_var = setup_network(df, target_var, opts)
+	network, train_fn, val_fn, input_var = setup_network(NUM_FEATURES, target_var, opts)
 
 	print("Starting training...")
 	#train network
 	train_network(network,train_fn,val_fn,X_train, y_train, X_val, y_val, opts)
-
-	print("Saving network parameters")
-	#Save trained network 
-	np.savez('model.npz', *lasagne.layers.get_all_param_values(network))
 
 	print("Loading testing data")
 	X_test,ids_test = get_test_data(sys.argv[2])
@@ -305,10 +384,15 @@ if __name__ == "__main__":
 	print("Making predictions...")
 	predictions = get_predictions(network,input_var, X_test)
 
+	predictions_stack = np.zeros((len(predictions),1,1))
+	predictions_stack[0:,0,0] = predictions[0:,1] 
+	predictions_stack = predictions_stack.astype(floatX)
+
+	predictions_stack = get_predictions(network_stack,input_var_stack,predictions_stack)
+
 	print("Writing predictions to file...")
 	result_filename = sys.argv[3]
-	write_results_file(result_filename,predictions,ids_test)
+	write_results_file(result_filename,predictions_stack,ids_test)
 
 	print("Complete.")
-
 

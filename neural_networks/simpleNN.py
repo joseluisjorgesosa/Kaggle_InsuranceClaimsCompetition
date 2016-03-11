@@ -24,8 +24,8 @@ def load_data(data_file):
 	cols = df.columns.tolist()[1:]
 	df = df[cols]
 
-	# #replace missing values with -999
-	df.fillna(-999, inplace=True)
+	#replace missing values with -999
+	#df.fillna(0, inplace=True)
 
 	#encode categorical features as integers
 	cat_columns = df.select_dtypes(['object']).columns
@@ -34,7 +34,12 @@ def load_data(data_file):
 
 	df[cat_columns] = df[cat_columns].apply(lambda x: x.cat.codes) #this may not be strictly necessary, since we already convert to category type first
 
+	#Replace missing value with average value (by column)
+	col_labels = df.columns[0:]
+	for col_label in col_labels:
+		df[col_label].fillna(df[col_label].mean(),inplace=True)
 	
+
 	return id_col, df
 
 #Function: getTrainingData()
@@ -45,7 +50,7 @@ def load_data(data_file):
 def get_training_data(training_file): 
 	ids_train, df = load_data(training_file)
 
-	traindf, valdf = train_test_split(df, test_size = 0.2)
+	traindf, valdf = train_test_split(df, test_size = .2)
 
 	features = list(traindf.columns[1:])
 	labels = traindf.columns[0]
@@ -87,27 +92,49 @@ def get_test_data(test_data_filename):
 	return X_test, ids_test
 
 
-def build_mlp(numFeatures):
+def build_mlp(numFeatures, opts):
 
 	network = lasagne.layers.InputLayer(shape=(None,1,numFeatures),bias=lasagne.init.Constant(1))
 	input_var = network.input_var
 
 	network = lasagne.layers.BiasLayer(network, 
-				b=lasagne.init.Constant(-10))
+				b=lasagne.init.Constant(-1))
 
-	network = lasagne.layers.DenseLayer(
-				network, num_units=100,
-				nonlinearity=lasagne.nonlinearities.sigmoid,
-				W=lasagne.init.GlorotNormal(gain=1))
 
-	network = lasagne.layers.DropoutLayer(network, p=0.2, rescale=True)
+	network = lasagne.layers.DropoutLayer(network, p=opts['dropout_rate_1'], rescale=True)
 
-	network = lasagne.layers.DenseLayer(
-				network, num_units=40,
-				nonlinearity=lasagne.nonlinearities.ScaledTanH(scale_in=1, scale_out=1),
-				W=lasagne.init.GlorotNormal(gain=1))
+	if(opts['activation_func_1'] == 'sigmoid'):
+		activation_func_1 = lasagne.nonlinearities.sigmoid
+	elif(opts['activation_func_1'] == 'tanh'):
+		activation_func_1 =  lasagne.nonlinearities.ScaledTanH(scale_in=1, scale_out=1)
+	elif(opts['activation_func_1'] == 'linear'):
+		activation_func_1 = lasagne.nonlinearities.linear
+	elif(opts['activation_func_1'] == 'rectify'):
+		activation_func_1 = lasagne.nonlinearities.rectify
 
-	network = lasagne.layers.DropoutLayer(network, p=0.15, rescale=True)
+	if(opts['two_hidden_layers'] == True):
+		network = lasagne.layers.DenseLayer(
+					network, num_units=opts['hidden_units_1'],
+					nonlinearity=activation_func_1,
+					W=lasagne.init.GlorotNormal(gain=1))
+
+		network = lasagne.layers.DropoutLayer(network, p=opts['dropout_rate_2'], rescale=True)
+
+		if(opts['activation_func_2'] == 'sigmoid'):
+			activation_func_2 = lasagne.nonlinearities.sigmoid
+		elif(opts['activation_func_2'] == 'tanh'):
+			activation_func_2 = lasagne.nonlinearities.ScaledTanH(scale_in=1, scale_out=1)
+		elif(opts['activation_func_2'] == 'linear'):
+			activation_func_2 = lasagne.nonlinearities.linear
+		elif(opts['activation_func_2'] == 'rectify'):
+			activation_func_2 = lasagne.nonlinearities.rectify
+
+
+		network = lasagne.layers.DenseLayer(
+					network, num_units=opts['hidden_units_2'],
+					nonlinearity=activation_func_2,
+					W=lasagne.init.GlorotNormal(gain=1))
+
 
 	network = lasagne.layers.DenseLayer(
 		network, num_units=2,
@@ -123,7 +150,7 @@ def build_mlp(numFeatures):
 #
 def setup_network(df, target_var, opts):
 
-	input_var, network = build_mlp(len(df.columns[1:]))
+	input_var, network = build_mlp(len(df.columns[1:]),opts)
 
 	#create loss function 
 	prediction = lasagne.layers.get_output(network)
@@ -155,9 +182,6 @@ def setup_network(df, target_var, opts):
 # Description: trains the neural network based on a training function, validation function, and num_epochs value
 #
 def train_network(network,train_fn,val_fn, X_train,y_train, X_val,y_val,opts):
-	saved_validation_loss = np.empty(opts['num_epochs'])
-	saved_training_loss = np.empty(opts['num_epochs'])
-	
 	epoch = 0
 	prev_err = 10000000
 	delta_err = 1000000
@@ -183,31 +207,21 @@ def train_network(network,train_fn,val_fn, X_train,y_train, X_val,y_val,opts):
 			val_acc += acc
 			val_batches += 1
 
-		saved_validation_loss[epoch] = val_err
-		saved_training_loss[epoch] = train_err
-		print("Epoch {} of {} took {:.3f}s".format(
-			epoch + 1, opts['num_epochs'], time.time() - start_time))
-		print("  training loss:\t\t{:.6f}".format(train_err / train_batches))
-		print("  validation loss:\t\t{:.6f}".format(val_err / val_batches))
-		print("  validation accuracy:\t\t{:.2f}%".format(
-            val_acc / val_batches * 100))
+		if(not opts['mute_training_output']):
+			print("Epoch {} of {} took {:.3f}s".format(
+				epoch + 1, opts['num_epochs'], time.time() - start_time))
+			print("  training loss:\t\t{:.6f}".format(train_err / train_batches))
+			print("  validation loss:\t\t{:.6f}".format(val_err / val_batches))
+			print("  validation accuracy:\t\t{:.2f}%".format(
+	            val_acc / val_batches * 100))
 
-		delta_err = abs((train_err/train_batches) - (prev_err))
-		prev_err = (train_err/train_batches)
-		print("  delta err:\t\t{:.6f}".format(delta_err))
+			delta_err = abs((train_err/train_batches) - (prev_err))
+			prev_err = (train_err/train_batches)
+			print("  delta err:\t\t{:.6f}".format(delta_err))
 
 		epoch +=1
 
-	t = np.asarray(range(opts['num_epochs'])) 
-	s = saved_validation_loss
-	r = saved_training_loss
-	plt.plot(t, s,'r^',t,r,'b^')
-	plt.xlabel('Epoch')
-	plt.ylabel('Validation Error')
-	plt.title('Validation Error Over Neural Net Training')
-	plt.grid(True)
-	plt.savefig("testNN.png")
-	#plt.show()
+	return (val_err/val_batches)
 
 # ############################# Batch iterator ###############################
 # This is just a simple helper function iterating over training data in
@@ -264,25 +278,29 @@ def write_results_file(results_filename, predictions, ids_test):
 
 	results.close()
 
-
-# Main is based off of code from example of neural net from Lasagne distribution
-# found at https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py#L213
+#Function: get_neural_net_error
 #
-if __name__ == "__main__":
+#Description: Setup and train a neural network given options and data
+#
+def get_neural_net_error(opts, X_train, y_train, X_val, y_val, df):
 
-	#Set paramters
-	opts = {
-		'step_size' : .001,			#Step size for gradient updates
-		'momentum' :.9,
-		'num_epochs' : 30,			#Maximum number of epochs during training
-		'batch_size' : 300,		#Batch size used during training
+	# Prepare Theano variables
+	target_var = T.ivector('target')
 
-	}
+	#setup Network
+	network, train_fn, val_fn, input_var = setup_network(df, target_var, opts)
 
-	print("Loading training data...")
-	#Load training data 			 
-	Training_Data_File = sys.argv[1]
-	X_train, y_train, X_val, y_val, df = get_training_data(Training_Data_File)
+	#train network
+	error = train_network(network,train_fn,val_fn,X_train, y_train, X_val, y_val, opts)
+
+	return error
+
+
+#Function: get_neural_net
+#
+#Description: Setup and train a neural network given options and data
+#
+def get_neural_net(opts, X_train, y_train, X_val, y_val, df):
 
 	# Prepare Theano variables
 	target_var = T.ivector('target')
@@ -295,9 +313,37 @@ if __name__ == "__main__":
 	#train network
 	train_network(network,train_fn,val_fn,X_train, y_train, X_val, y_val, opts)
 
-	print("Saving network parameters")
-	#Save trained network 
-	np.savez('model.npz', *lasagne.layers.get_all_param_values(network))
+	return network, input_var
+
+
+
+# Main is based off of code from example of neural net from Lasagne distribution
+# found at https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py#L213
+#
+if __name__ == "__main__":
+
+	#Set paramters
+	opts = {
+		'step_size' : .02,				#Step size for gradient updates
+		'momentum' :.9,
+		'num_epochs' : 20,				#Maximum number of epochs during training
+		'batch_size' : 30,				#Batch size used during training
+		'two_hidden_layers': 1,			#1 or 2 hidden layers
+		'hidden_units_1': 50,			#Hidden units in layer 1
+		'hidden_units_2': 10,			#Hidden units in layer 2
+		'dropout_rate_1': .05, 			#Dropout rate between input and layer 1
+		'dropout_rate_2': .05, 			#Dropout rate between layer 1 and layer 2
+		'activation_func_1': 'sigmoid', #Activation function used in layer 1
+		'activation_func_2': 'tanh',	#Activation function used in layer 2
+		'mute_training_output': False,  #Show the stats on training on each iterations
+	}
+
+	print("Loading training data...")
+	#Load training data 			 
+	Training_Data_File = sys.argv[1]
+	X_train, y_train, X_val, y_val, df = get_training_data(Training_Data_File)
+
+	network, input_var = get_neural_net(opts, X_train, y_train, X_val, y_val, df)
 
 	print("Loading testing data")
 	X_test,ids_test = get_test_data(sys.argv[2])

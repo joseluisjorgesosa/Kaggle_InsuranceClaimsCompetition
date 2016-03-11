@@ -25,7 +25,7 @@ def load_data(data_file):
 	df = df[cols]
 
 	# #replace missing values with -999
-	df.fillna(-999, inplace=True)
+	df.fillna(0, inplace=True)
 
 	#encode categorical features as integers
 	cat_columns = df.select_dtypes(['object']).columns
@@ -321,11 +321,6 @@ if __name__ == "__main__":
 	all_stack[0:len(df),0,1] = X_stack[0:,0,0]
 
 
-	########################################################################
-	# TODO: APPEND LABELS TO DATA, TRAIN ON IT 							#
-	# THEN APPEND PREDICTIONS FOR X_TEST TO X_TEST AND TRAIN ON X_test  #
-	########################################################################
-
 	#Now complete stack trainig
 
 	#Set paramters
@@ -349,7 +344,7 @@ if __name__ == "__main__":
 	X_stack_train[0:len(stack_train),0,0] = stack_train[0:,0,1]
 	X_stack_train = X_stack_train.astype(floatX)
 
-	y_stack_train = stack_train[0:,0,1].astype('int32')
+	y_stack_train = stack_train[0:,0,0].astype('int32')
 
 	# Prepare Theano variables
 	target_var_stack = T.ivector('target')

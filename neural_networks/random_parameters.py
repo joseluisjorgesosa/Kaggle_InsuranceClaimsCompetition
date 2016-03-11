@@ -60,11 +60,11 @@ def get_default_opts():
 		'dropout_rate_2': .1, 						#Dropout rate between layer 1 and layer 2
 		'activation_func_1': 'sigmoid', 			#Activation function used in layer 1
 		'activation_func_2': 'sigmoid',				#Activation function used in layer 2
-		'mute_training_output': True,  #			Show the stats on training on each iterations
+		'mute_training_output': False,  #			Show the stats on training on each iterations
 	}
 
 	return opts
-	
+
 def get_random_opts():
 	
 	#Set paramters

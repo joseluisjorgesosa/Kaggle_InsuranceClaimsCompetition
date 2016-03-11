@@ -26,13 +26,11 @@ def load_data(filename):
 #
 
 def evolve_population(population,max_iters):
-
 	#Evolve population max iters number of times
 	for j in range(max_iters):
-
+		print(str(j) + " of " + str(max_iters) + " iterations")
 		new_pop = []
 		for i in range(len(population)):
-
 			net_a = get_random_network(population)
 			net_b = get_random_network(population)
 
@@ -41,6 +39,7 @@ def evolve_population(population,max_iters):
 			new_net = mutate(new_net)
 
 			new_pop.insert(i,new_net)
+			print("\t"+ str(i) + " of " + str(len(population)) + " individuals produced")
 
 		new_pop = population
 
@@ -74,7 +73,7 @@ def get_top_networks(num_nets, population):
 
 	sorted_nets =  sorted(population, key=operator.itemgetter(1))
 
-	return sorted_nets[1:min(len(sorted_nets)-1,num_nets)]
+	return sorted_nets[0:min(len(sorted_nets),num_nets)]
 
 #Description: Given two networks, creates a new network that is a combination of the previous two
 #
@@ -147,6 +146,31 @@ def initialize_population(init_popSize):
 
 	return population
 
+def write_to_file(nets, results_filename):
+		
+		results = open(results_filename,'a')
+ 	
+ 		for network in nets:
+ 			opts = network[0]
+
+ 			net_info = " "
+ 			net_info = net_info + str(opts['step_size'])
+ 			net_info = net_info +","+ str(opts['momentum'])
+ 			net_info = net_info +","+ str(opts['num_epochs'])
+ 			net_info = net_info +","+ str(opts['batch_size'])
+ 			net_info = net_info +","+ str(opts['hidden_units_1'])
+ 			net_info = net_info +","+ str(opts['hidden_units_2'])
+			net_info = net_info +","+ str(opts['dropout_rate_1'])
+			net_info = net_info +","+ str(opts['dropout_rate_2'])
+			net_info = net_info +","+ str(opts['activation_func_1'])
+			net_info = net_info +","+ str(opts['activation_func_2']) + "\n"
+
+			print(net_info)
+
+			results.write(net_info)
+	
+		results.close();
+
 # Main: Genetic Algorithm for Parameter Tuning of Neural Networks
 #
 #
@@ -154,15 +178,28 @@ def initialize_population(init_popSize):
 if __name__ == "__main__":
 
 	#Initial Pop Size
-	init_popSize = 1
+	init_popSize = 20
 
 	#Maximum iterations
-	max_iters = 1
+	max_iters = 5
 
+	print("Loading data...")
 	X_TRAIN, Y_TRAIN, X_VAL, Y_VAL, DF = load_data(sys.argv[1])
+
+
+	print("Initializing population...")
 	population = initialize_population(init_popSize)
+
+
+	print("Starting Evolution...")
 	population = evolve_population(population,max_iters)
+
+	print("Getting top neural nets..")
 	selected_neural_nets = get_top_networks(10,population)
+
+	print("Writing to file...")
+	write_to_file(selected_neural_nets,sys.argv[2])
+
 
 
 

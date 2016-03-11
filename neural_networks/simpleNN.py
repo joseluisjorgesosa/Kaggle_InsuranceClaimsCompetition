@@ -25,7 +25,7 @@ def load_data(data_file):
 	df = df[cols]
 
 	#replace missing values with -999
-	#df.fillna(0, inplace=True)
+	df.fillna(0, inplace=True)
 
 	#encode categorical features as integers
 	cat_columns = df.select_dtypes(['object']).columns
@@ -35,9 +35,9 @@ def load_data(data_file):
 	df[cat_columns] = df[cat_columns].apply(lambda x: x.cat.codes) #this may not be strictly necessary, since we already convert to category type first
 
 	#Replace missing value with average value (by column)
-	col_labels = df.columns[0:]
-	for col_label in col_labels:
-		df[col_label].fillna(df[col_label].mean(),inplace=True)
+	#col_labels = df.columns[0:]
+	#for col_label in col_labels:
+	#	df[col_label].fillna(df[col_label].mean(),inplace=True)
 	
 
 	return id_col, df
@@ -111,6 +111,9 @@ def build_mlp(numFeatures, opts):
 		activation_func_1 = lasagne.nonlinearities.linear
 	elif(opts['activation_func_1'] == 'rectify'):
 		activation_func_1 = lasagne.nonlinearities.rectify
+	else:
+			print(opts['activation_func_1'] + " not valid (1)")
+			sys.exit(-1)
 
 	if(opts['two_hidden_layers'] == True):
 		network = lasagne.layers.DenseLayer(
@@ -128,7 +131,9 @@ def build_mlp(numFeatures, opts):
 			activation_func_2 = lasagne.nonlinearities.linear
 		elif(opts['activation_func_2'] == 'rectify'):
 			activation_func_2 = lasagne.nonlinearities.rectify
-
+		else:
+			print(opts['activation_func_2'] + " not valid (2)")
+			sys.exit(-1)
 
 		network = lasagne.layers.DenseLayer(
 					network, num_units=opts['hidden_units_2'],

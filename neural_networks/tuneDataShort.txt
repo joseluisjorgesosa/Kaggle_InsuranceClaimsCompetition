@@ -1,0 +1,3835 @@
+==================================================================================
+Error:0.491087338945
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488254565226
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.507324518258
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.514699921362
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491404395097
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495842951798
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.50140629071
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.516521153916
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.50741401101
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.513986422652
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.499777236479
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.523674456543
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502724725367
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.50379343827
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.506458456442
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.522698101668
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491130837288
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.504933507179
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495805773996
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.505878256496
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495042141838
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493202389219
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.505563097463
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.511302337624
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.500036450492
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.498858409766
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.504759839014
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.513086964218
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502529428272
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.50589705427
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.508879334534
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.520795406489
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489828847869
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.505130612414
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.559842900349
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.506002902707
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493247405147
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.497914143743
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.500243830225
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.510952649109
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.532246605399
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.494217842128
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.500654678261
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.561756708056
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.503689976676
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.505352779484
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.556585771278
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.5565316841
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492401876519
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491552874733
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.498619460364
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.574873576456
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491357466355
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.565846165634
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.556597379471
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.507300015815
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.561090194167
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.50690017733
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.557722680504
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.562797718349
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.518361865956
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.560235308348
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.556190331836
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.555981828632
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491185427083
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.555996948404
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.558815133976
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.555679664207
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.556192814884
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.557077098279
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.562647715695
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.56005031199
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.571462833256
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.555507091816
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.555776487152
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.555651014953
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.560561008471
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.55564610851
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.555989524284
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.555810845427
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 10
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493521772103
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488093393595
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493663375578
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491380143301
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49955476417
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493157209952
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.496778442868
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.501110097878
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493009044157
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489957858915
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.504009128326
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.499195026466
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.513956303419
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.508049224802
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.499371412036
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.511032099597
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.485226391677
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489067424734
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.508129908581
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495650285002
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488153820593
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.498375960192
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.486314681268
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49563836236
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.494675924312
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489327821348
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.501414656213
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.497082270029
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502670270245
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49937474648
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502225071829
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.509074342345
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.485695138711
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487099277441
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488431148807
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.498428463514
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.513390191783
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487590087341
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487299050086
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.498802123881
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49338758652
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492764576832
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49201528283
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.50115148541
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.501277543559
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.496505272134
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502717209781
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.510044728943
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502906745046
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.484101534633
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488280775955
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49078981754
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.490755949655
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488462770293
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.494479435234
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495071140475
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.490257767633
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492527150204
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.496238353209
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.508419908883
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.515468969895
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.511584946772
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502751776175
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502168633703
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.484794850588
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488569579477
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.490555146712
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.499369165072
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487673658142
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489256819383
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.486954148761
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.509511200383
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.55584550946
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488548220079
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.496131662559
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.500988153266
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502907069785
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502986892911
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.557813631844
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.512123703861
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 50
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.482884996442
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.485466032928
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487315118774
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491125418885
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487093746259
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491087287568
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489741940922
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491606922814
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491804480416
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502774268211
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.512533201063
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495410402547
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502981850352
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.499848157313
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.506303914776
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.510442551539
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489748594332
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49085288463
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489083108752
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493211670682
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.499597905543
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.505760422513
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491967768919
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495221452576
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489091167093
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.496031958258
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491988339971
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.499474912376
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.498079731695
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.501415236421
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.511655696938
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.500456941907
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488647619294
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.496512872033
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.484115282191
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488100830663
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49114190591
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489157968771
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488616550269
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493036732105
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489118428898
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.494969714668
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495116629977
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495926149429
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.499439230281
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.497063028615
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502768994656
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.50298248577
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.490911354668
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487072488075
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492644544884
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.500603563935
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488481188208
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.486494408637
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491925892559
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.504667182553
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495543335597
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492550608556
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49153013014
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.511360480714
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.500499175694
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49939243062
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49909307868
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.509702177319
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 200
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.494996133752
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.48680118933
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489917007925
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.504570550432
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487346099009
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.485725182077
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489779406336
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49193270232
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492315986452
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.495673254183
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49331628223
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.496201933411
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.518355861074
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49798494264
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.511950958676
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.512736099169
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 100
+Hidden Units 2: 500
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.48807841203
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.48644581239
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.484967035214
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491404602828
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487059505774
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49195531562
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493009770828
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.526220825101
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502123456466
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49511783635
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.501557171592
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49643343801
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.513263570921
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.50104798025
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.498845513196
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.504166636844
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 10
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487489452372
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492188581941
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.486743395048
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493323169495
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488819403305
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.489874223478
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492669810305
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492757494148
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491870276972
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.509148935377
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.494193554653
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.498046849693
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.501630482984
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.496121548691
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.502484854986
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.515330404908
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 50
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491332194526
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.504248438585
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487091473146
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.491943248657
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.487071825423
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.497522504983
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.494255767108
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492386997613
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.493090157002
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.497689277466
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492253727219
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.496386934968
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.25
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.514068864837
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.504050982442
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.5002760053
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.514141081526
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 100
+Dropout Rate 1: 0.5
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.492042586852
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49262156654
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.512915057109
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.494416577961
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 200
+Dropout Rate 1: 0.05
+Dropout Rate 2: 0.5
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.488773960738
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.05
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.49848983676
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.1
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================
+==================================================================================
+Error:0.500497960292
+Step Size:1
+Momentum: 0.01
+Number of Epochs: 20
+Batch Size: 30
+Hidden Units 1: 200
+Hidden Units 2: 200
+Dropout Rate 1: 0.1
+Dropout Rate 2: 0.25
+Activation Func 1: sigmoid
+Activation Func 2: sigmoid
+==================================================================================

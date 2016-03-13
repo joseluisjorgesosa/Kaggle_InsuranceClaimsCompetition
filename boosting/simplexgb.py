@@ -5,6 +5,9 @@ import pandas as pd
 from sklearn import preprocessing
 from sklearn.cross_validation import train_test_split
 
+from sklearn.feature_extraction import DictVectorizer
+
+
 
 def load_data(data_file):
 	'''
@@ -17,55 +20,78 @@ def load_data(data_file):
 	cols = df.columns.tolist()[1:]
 	df = df[cols]
 
-	# #replace missing values with -999
+	#replace missing values with large negative value (to encode the absence of the variable)
 	df.fillna(-999, inplace=True)
 
-	#encode categorical features as integers
+	#categorical columns
 	cat_columns = df.select_dtypes(['object']).columns
-	for c in cat_columns:
-		df[c] = df[c].astype('category')
 
-	df[cat_columns] = df[cat_columns].apply(lambda x: x.cat.codes) #this may not be strictly necessary, since we already convert to category type first
+	#normalize and convert categoricals to numbers
+	for c in df.columns.tolist():
+		if c == 'target':
+			continue
+		if c in cat_columns:
+			df[c] = df[c].astype('category')
+			continue
+		df[c] = (df[c] - df[c].mean()) / (df[c].max() - df[c].min())		
+	df[cat_columns] = df[cat_columns].apply(lambda x: x.cat.codes)
+
+	#delete unnecessary columns (see post https://www.kaggle.com/c/bnp-paribas-cardif-claims-management/forums/t/19240/analysis-of-duplicate-variables-correlated-variables-large-post)
+	# df.drop('v91', axis=1, inplace=True)
+
+
 
 	return id_col, df
 
+def write_results(pred, ids_test):
+	'''
+	Write results csv file. Each line is ID,probablity pair
+	'''
+	submission = open('results.csv','w')
+	submission.write('ID,PredictedProb\n')
 
+	for i in range(len(preds)):
+		submission.write(str(ids_test[i]) + "," + str(preds[i])+"\n")
+	submission.close()
+
+def write_stats(fname, col, best_score, best_iteration):
+	stats = open(fname, 'a')
+	stats.write('Run with max_depth = {0}, score: {1}, iteration: {2}\n'.format(col, best_score, best_iteration))
+	stats.close()
 
 if __name__=="__main__":
 
+	if len(sys.argv) != 3:
+		print("Usage: python simplexgb.py training_csv_file, testing_csv_file")
+		sys.exit(1)
+
 	#load data
-	ids_train, df = load_data(sys.argv[1])
+	_, df = load_data(sys.argv[1])
 	ids_test, predict_df = load_data(sys.argv[2]) #data set to predict values for
 
-	traindf, testdf = train_test_split(df, test_size = 0.2)
+	#split training set 80/20 and train on 80% use 20% to evaluate
+	traindf, evaldf = train_test_split(df, test_size = 0.20)
 
 	features = list(traindf.columns[1:])
 	labels = traindf.columns[0]
-
 	train_DMatrix = xgb.DMatrix(traindf[features], traindf[labels])
-	test_DMatrix = xgb.DMatrix(testdf[features], testdf[labels]) #for validation/early stopping
-
-	predict_DMatrix = xgb.DMatrix(predict_df)
+	eval_DMatrix = xgb.DMatrix(evaldf[features], evaldf[labels]) #for validation/early stopping
 
 	#specify parameters
-	param = {'max_depth':10, 'eta':0.1, 'silent':1, 'objective':'reg:linear' }
+	# current optimal 6, 0.1, 5, 0.7, 0.8
+	#or maybe 6, 0.1, 1, 0.5, 0.4
+	param = {'max_depth':6, 'eta':0.1, 'min_child_weight':5, 'silent':1, 'objective':'binary:logistic', 'eval_metric':'logloss', 'subsample':0.7, 'col_sample_bytree':0.8 }
 
-	#specify validations set to watch performance
-	watchlist  = [(test_DMatrix,'eval'), (train_DMatrix,'train')]
-	num_round = 70
-	bst = xgb.train(param, train_DMatrix, num_round, watchlist)
+	#specify validation set to watch performance
+	watchlist  = [(train_DMatrix,'train'), (eval_DMatrix,'eval')]
+	num_round = 2000
+	bst = xgb.train(param, train_DMatrix, num_round, watchlist, early_stopping_rounds=10)
 
 	#prediction
+	predict_DMatrix = xgb.DMatrix(predict_df)
 	preds = bst.predict(predict_DMatrix)
+	write_results(preds, ids_test)
 
-	test_submission = open('results.csv','w')
-	test_submission.write('ID,PredictedProb\n')
+	# write_stats('xgb_stats', test, bst.best_score, bst.best_iteration)
 
-	for i in range(len(preds)):
-		test_submission.write(str(ids_test[i]) + "," + str(preds[i])+"\n")
-
-	test_submission.close()
-
-	# print preds
-	# print ('error=%f' % ( sum(1 for i in range(len(preds)) if int(preds[i]>0.5)!=labels[i]) /float(len(preds))))
-	bst.save_model('0001.model')
+	# bst.save_model('0001.model')

@@ -1,0 +1,322 @@
+Run with max_depth = 1, score: 0.400303, iteration: 648
+Run with max_depth = 2, score: 0.393343, iteration: 292
+Run with max_depth = 3, score: 0.390704, iteration: 139
+Run with max_depth = 4, score: 0.38965, iteration: 199
+Run with max_depth = 5, score: 0.390371, iteration: 125
+Run with max_depth = 6, score: 0.388804, iteration: 88
+Run with max_depth = 7, score: 0.390184, iteration: 73
+Run with max_depth = 8, score: 0.390215, iteration: 64
+Run with max_depth = 9, score: 0.393415, iteration: 57
+Run with max_depth = 10, score: 0.393031, iteration: 48
+Run with max_depth = 11, score: 0.387239, iteration: 72
+Run with max_depth = 12, score: 0.393566, iteration: 50
+Run with max_depth = 13, score: 0.391823, iteration: 53
+Run with max_depth = 14, score: 0.396365, iteration: 47
+Run with max_depth = 15, score: 0.396879, iteration: 61
+Run with max_depth = 16, score: 0.396732, iteration: 33
+Run with max_depth = 17, score: 0.397298, iteration: 59
+Run with max_depth = 18, score: 0.397873, iteration: 58
+Run with max_depth = 19, score: 0.396616, iteration: 31
+Run with max_depth = 20, score: 0.39542, iteration: 53
+Run with max_depth = 1, score: 0.397104, iteration: 434
+Run with max_depth = 2, score: 0.390829, iteration: 248
+Run with max_depth = 3, score: 0.393105, iteration: 210
+Run with max_depth = 4, score: 0.387979, iteration: 117
+Run with max_depth = 5, score: 0.392458, iteration: 103
+Run with max_depth = 6, score: 0.38728, iteration: 131
+Run with max_depth = 7, score: 0.388596, iteration: 103
+Run with max_depth = 6, score: 0.387495, iteration: 77
+Run with max_depth = 6, score: 0.390624, iteration: 81
+Run with max_depth = 6, score: 0.391374, iteration: 117
+Run with max_depth = 7, score: 0.390253, iteration: 79
+Run with max_depth = 7, score: 0.390065, iteration: 73
+Run with max_depth = 7, score: 0.390758, iteration: 69
+Run with max_depth = 11, score: 0.39167, iteration: 56
+Run with max_depth = 11, score: 0.392782, iteration: 56
+Run with max_depth = 11, score: 0.396048, iteration: 52
+Run with max_depth = 11, score: 0.392372, iteration: 54
+Run with min_child_weight = 1, score: 0.389476, iteration: 104
+Run with min_child_weight = 2, score: 0.391862, iteration: 123
+Run with min_child_weight = 3, score: 0.393547, iteration: 120
+Run with min_child_weight = 4, score: 0.389455, iteration: 90
+Run with min_child_weight = 5, score: 0.387028, iteration: 83
+Run with min_child_weight = 6, score: 0.390757, iteration: 120
+Run with min_child_weight = 7, score: 0.392259, iteration: 116
+Run with min_child_weight = 8, score: 0.390045, iteration: 87
+Run with min_child_weight = 9, score: 0.3909, iteration: 117
+Run with min_child_weight = 10, score: 0.390328, iteration: 129
+Run with min_child_weight = 11, score: 0.391091, iteration: 124
+Run with min_child_weight = 12, score: 0.390159, iteration: 119
+Run with min_child_weight = 13, score: 0.391503, iteration: 107
+Run with min_child_weight = 14, score: 0.387673, iteration: 96
+Run with min_child_weight = 15, score: 0.390643, iteration: 120
+Run with min_child_weight = 16, score: 0.389318, iteration: 114
+Run with min_child_weight = 17, score: 0.389731, iteration: 144
+Run with min_child_weight = 18, score: 0.392081, iteration: 113
+Run with min_child_weight = 19, score: 0.388617, iteration: 109
+Run with min_child_weight = 20, score: 0.387324, iteration: 108
+Run with min_child_weight = 100, score: 0.392482, iteration: 75
+Run with min_child_weight = 21, score: 0.391165, iteration: 130
+Run with min_child_weight = 4, score: 0.39111, iteration: 118
+Run with min_child_weight = 4, score: 0.387834, iteration: 102
+Run with min_child_weight = 4, score: 0.389575, iteration: 78
+Run with min_child_weight = 5, score: 0.389215, iteration: 64
+Run with min_child_weight = 5, score: 0.388943, iteration: 71
+Run with min_child_weight = 5, score: 0.391459, iteration: 81
+Run with min_child_weight = 14, score: 0.387822, iteration: 91
+Run with min_child_weight = 14, score: 0.389023, iteration: 101
+Run with min_child_weight = 14, score: 0.39016, iteration: 90
+Run with subsample = 0.1, score: 0.390974, iteration: 80
+Run with subsample = 0.1, score: 0.390693, iteration: 82
+Run with subsample = 0.2, score: 0.388578, iteration: 77
+Run with subsample = 0.2, score: 0.391085, iteration: 108
+Run with subsample = 0.3, score: 0.388584, iteration: 56
+Run with subsample = 0.3, score: 0.393802, iteration: 107
+Run with subsample = 0.4, score: 0.391264, iteration: 52
+Run with subsample = 0.4, score: 0.392097, iteration: 80
+Run with subsample = 0.5, score: 0.392547, iteration: 97
+Run with subsample = 0.5, score: 0.389705, iteration: 85
+Run with subsample = 0.6, score: 0.390615, iteration: 86
+Run with subsample = 0.6, score: 0.391405, iteration: 69
+Run with subsample = 0.7, score: 0.393075, iteration: 91
+Run with subsample = 0.7, score: 0.393697, iteration: 62
+Run with subsample = 0.8, score: 0.389074, iteration: 76
+Run with subsample = 0.8, score: 0.386582, iteration: 100
+Run with subsample = 0.9, score: 0.3911, iteration: 74
+Run with subsample = 0.9, score: 0.39236, iteration: 97
+Run with subsample = 1.0, score: 0.392005, iteration: 137
+Run with subsample = 1.0, score: 0.388491, iteration: 97
+Run with max_depth = 1, score: 0.487987, iteration: 435
+Run with max_depth = 2, score: 0.479853, iteration: 253
+Run with max_depth = 3, score: 0.468152, iteration: 182
+Run with max_depth = 4, score: 0.469643, iteration: 126
+Run with max_depth = 5, score: 0.467369, iteration: 128
+Run with max_depth = 6, score: 0.462713, iteration: 100
+Run with max_depth = 7, score: 0.466545, iteration: 87
+Run with max_depth = 8, score: 0.46287, iteration: 113
+Run with max_depth = 9, score: 0.465733, iteration: 75
+Run with max_depth = 10, score: 0.468286, iteration: 72
+Run with max_depth = 11, score: 0.466682, iteration: 62
+Run with max_depth = 12, score: 0.468264, iteration: 42
+Run with max_depth = 13, score: 0.46779, iteration: 68
+Run with max_depth = 14, score: 0.469697, iteration: 61
+Run with max_depth = 15, score: 0.472133, iteration: 55
+Run with max_depth = 16, score: 0.464963, iteration: 55
+Run with max_depth = 17, score: 0.468897, iteration: 68
+Run with max_depth = 18, score: 0.471893, iteration: 54
+Run with max_depth = 6, score: 0.464639, iteration: 120
+Run with max_depth = 6, score: 0.469919, iteration: 818
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.1, score: 0.48334, iteration: 38
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.1, score: 0.480533, iteration: 34
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.2, score: 0.474866, iteration: 50
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.3, score: 0.481966, iteration: 39
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.4, score: 0.48081, iteration: 37
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.5, score: 0.471186, iteration: 50
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.6, score: 0.480022, iteration: 38
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.7, score: 0.479815, iteration: 48
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.8, score: 0.47711, iteration: 52
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 0.9, score: 0.474261, iteration: 44
+Run with min_child_weight = 1, subsample = 0.1, col_sample_bytree = 1.0, score: 0.481346, iteration: 44
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 0.1, score: 0.480378, iteration: 57
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 0.2, score: 0.477309, iteration: 61
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 0.3, score: 0.475263, iteration: 66
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 0.4, score: 0.475543, iteration: 46
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 0.5, score: 0.479847, iteration: 65
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 0.6, score: 0.48057, iteration: 48
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 0.7, score: 0.477201, iteration: 57
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 0.8, score: 0.477149, iteration: 43
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 0.9, score: 0.471787, iteration: 74
+Run with min_child_weight = 1, subsample = 0.2, col_sample_bytree = 1.0, score: 0.475685, iteration: 55
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 0.1, score: 0.471749, iteration: 45
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 0.2, score: 0.473226, iteration: 75
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 0.3, score: 0.475416, iteration: 76
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 0.4, score: 0.466767, iteration: 100
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 0.5, score: 0.472613, iteration: 73
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 0.6, score: 0.467015, iteration: 80
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 0.7, score: 0.476926, iteration: 66
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 0.8, score: 0.472804, iteration: 96
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 0.9, score: 0.46929, iteration: 98
+Run with min_child_weight = 1, subsample = 0.3, col_sample_bytree = 1.0, score: 0.470905, iteration: 88
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 0.1, score: 0.464392, iteration: 100
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 0.2, score: 0.472414, iteration: 120
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 0.3, score: 0.472954, iteration: 128
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 0.4, score: 0.467756, iteration: 116
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 0.5, score: 0.465869, iteration: 92
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 0.6, score: 0.473098, iteration: 82
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 0.7, score: 0.465575, iteration: 99
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 0.8, score: 0.473122, iteration: 89
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 0.9, score: 0.474815, iteration: 124
+Run with min_child_weight = 1, subsample = 0.4, col_sample_bytree = 1.0, score: 0.470998, iteration: 113
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 0.1, score: 0.468561, iteration: 114
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 0.2, score: 0.465261, iteration: 169
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 0.3, score: 0.465555, iteration: 128
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 0.4, score: 0.45825, iteration: 149
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 0.5, score: 0.465667, iteration: 108
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 0.6, score: 0.472192, iteration: 207
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 0.7, score: 0.472566, iteration: 112
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 0.8, score: 0.470284, iteration: 78
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 0.9, score: 0.470573, iteration: 119
+Run with min_child_weight = 1, subsample = 0.5, col_sample_bytree = 1.0, score: 0.472416, iteration: 102
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 0.1, score: 0.469754, iteration: 139
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 0.2, score: 0.472646, iteration: 140
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 0.3, score: 0.467375, iteration: 196
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 0.4, score: 0.46427, iteration: 156
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 0.5, score: 0.462783, iteration: 111
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 0.6, score: 0.468901, iteration: 194
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 0.7, score: 0.471027, iteration: 134
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 0.8, score: 0.465406, iteration: 156
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 0.9, score: 0.469151, iteration: 153
+Run with min_child_weight = 1, subsample = 0.6, col_sample_bytree = 1.0, score: 0.46835, iteration: 126
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 0.1, score: 0.469275, iteration: 129
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 0.2, score: 0.47323, iteration: 141
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 0.3, score: 0.471852, iteration: 121
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 0.4, score: 0.462024, iteration: 156
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 0.5, score: 0.462355, iteration: 179
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 0.6, score: 0.470327, iteration: 174
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 0.7, score: 0.466537, iteration: 170
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 0.8, score: 0.473515, iteration: 203
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 0.9, score: 0.468646, iteration: 201
+Run with min_child_weight = 1, subsample = 0.7, col_sample_bytree = 1.0, score: 0.461382, iteration: 194
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 0.1, score: 0.466574, iteration: 233
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 0.2, score: 0.463307, iteration: 140
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 0.3, score: 0.469232, iteration: 152
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 0.4, score: 0.464413, iteration: 192
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 0.5, score: 0.465527, iteration: 163
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 0.6, score: 0.466567, iteration: 176
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 0.7, score: 0.468546, iteration: 119
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 0.8, score: 0.46763, iteration: 143
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 0.9, score: 0.467632, iteration: 173
+Run with min_child_weight = 1, subsample = 0.8, col_sample_bytree = 1.0, score: 0.467318, iteration: 155
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 0.1, score: 0.464741, iteration: 232
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 0.2, score: 0.463369, iteration: 213
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 0.3, score: 0.471723, iteration: 142
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 0.4, score: 0.46345, iteration: 316
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 0.5, score: 0.464602, iteration: 191
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 0.6, score: 0.471317, iteration: 164
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 0.7, score: 0.461825, iteration: 226
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 0.8, score: 0.46562, iteration: 141
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 0.9, score: 0.473605, iteration: 142
+Run with min_child_weight = 1, subsample = 0.9, col_sample_bytree = 1.0, score: 0.467704, iteration: 212
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 0.1, score: 0.463197, iteration: 279
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 0.2, score: 0.468914, iteration: 254
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 0.3, score: 0.46686, iteration: 224
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 0.4, score: 0.465982, iteration: 174
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 0.5, score: 0.463176, iteration: 295
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 0.6, score: 0.462771, iteration: 149
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 0.7, score: 0.466806, iteration: 188
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 0.8, score: 0.469121, iteration: 198
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 0.9, score: 0.462668, iteration: 199
+Run with min_child_weight = 1, subsample = 1.0, col_sample_bytree = 1.0, score: 0.471214, iteration: 135
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 0.1, score: 0.478503, iteration: 51
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 0.2, score: 0.482629, iteration: 44
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 0.3, score: 0.47563, iteration: 76
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 0.4, score: 0.480328, iteration: 41
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 0.5, score: 0.481018, iteration: 41
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 0.6, score: 0.48561, iteration: 63
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 0.7, score: 0.47767, iteration: 58
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 0.8, score: 0.479046, iteration: 55
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 0.9, score: 0.478838, iteration: 38
+Run with min_child_weight = 2, subsample = 0.1, col_sample_bytree = 1.0, score: 0.482886, iteration: 45
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 0.1, score: 0.472533, iteration: 70
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 0.2, score: 0.473368, iteration: 65
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 0.3, score: 0.470538, iteration: 51
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 0.4, score: 0.470527, iteration: 59
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 0.5, score: 0.470773, iteration: 58
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 0.6, score: 0.480266, iteration: 38
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 0.7, score: 0.472472, iteration: 56
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 0.8, score: 0.47534, iteration: 73
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 0.9, score: 0.47504, iteration: 92
+Run with min_child_weight = 2, subsample = 0.2, col_sample_bytree = 1.0, score: 0.470442, iteration: 78
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 0.1, score: 0.470322, iteration: 96
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 0.2, score: 0.466881, iteration: 116
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 0.3, score: 0.473461, iteration: 80
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 0.4, score: 0.47415, iteration: 78
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 0.5, score: 0.470912, iteration: 118
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 0.6, score: 0.472835, iteration: 80
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 0.7, score: 0.470193, iteration: 114
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 0.8, score: 0.469734, iteration: 112
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 0.9, score: 0.468306, iteration: 82
+Run with min_child_weight = 2, subsample = 0.3, col_sample_bytree = 1.0, score: 0.474395, iteration: 92
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 0.1, score: 0.464577, iteration: 71
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 0.2, score: 0.465187, iteration: 103
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 0.3, score: 0.467121, iteration: 127
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 0.4, score: 0.467423, iteration: 143
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 0.5, score: 0.476834, iteration: 76
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 0.6, score: 0.467882, iteration: 119
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 0.7, score: 0.472644, iteration: 98
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 0.8, score: 0.468492, iteration: 129
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 0.9, score: 0.467563, iteration: 143
+Run with min_child_weight = 2, subsample = 0.4, col_sample_bytree = 1.0, score: 0.469855, iteration: 137
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 0.1, score: 0.468004, iteration: 110
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 0.2, score: 0.469882, iteration: 131
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 0.3, score: 0.46765, iteration: 76
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 0.4, score: 0.473511, iteration: 166
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 0.5, score: 0.472644, iteration: 149
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 0.6, score: 0.467356, iteration: 115
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 0.7, score: 0.469473, iteration: 90
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 0.8, score: 0.471151, iteration: 161
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 0.9, score: 0.471795, iteration: 103
+Run with min_child_weight = 2, subsample = 0.5, col_sample_bytree = 1.0, score: 0.471519, iteration: 131
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 0.1, score: 0.471044, iteration: 91
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 0.2, score: 0.466843, iteration: 142
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 0.3, score: 0.469469, iteration: 136
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 0.4, score: 0.462667, iteration: 144
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 0.5, score: 0.470246, iteration: 128
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 0.6, score: 0.472238, iteration: 88
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 0.7, score: 0.465691, iteration: 191
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 0.8, score: 0.462908, iteration: 130
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 0.9, score: 0.466092, iteration: 121
+Run with min_child_weight = 2, subsample = 0.6, col_sample_bytree = 1.0, score: 0.465197, iteration: 156
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 0.1, score: 0.470949, iteration: 132
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 0.2, score: 0.470721, iteration: 100
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 0.3, score: 0.459825, iteration: 152
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 0.4, score: 0.467598, iteration: 141
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 0.5, score: 0.466669, iteration: 149
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 0.6, score: 0.466039, iteration: 182
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 0.7, score: 0.463614, iteration: 135
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 0.8, score: 0.465854, iteration: 187
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 0.9, score: 0.468959, iteration: 167
+Run with min_child_weight = 2, subsample = 0.7, col_sample_bytree = 1.0, score: 0.459987, iteration: 211
+Run with min_child_weight = 2, subsample = 0.8, col_sample_bytree = 0.1, score: 0.470804, iteration: 140
+Run with min_child_weight = 2, subsample = 0.8, col_sample_bytree = 0.2, score: 0.472534, iteration: 157
+Run with min_child_weight = 2, subsample = 0.8, col_sample_bytree = 0.3, score: 0.469281, iteration: 122
+Run with min_child_weight = 2, subsample = 0.8, col_sample_bytree = 0.4, score: 0.460538, iteration: 232
+Run with min_child_weight = 2, subsample = 0.8, col_sample_bytree = 0.5, score: 0.466583, iteration: 167
+Run with min_child_weight = 2, subsample = 0.8, col_sample_bytree = 0.6, score: 0.465748, iteration: 128
+Run with min_child_weight = 2, subsample = 0.8, col_sample_bytree = 0.7, score: 0.460205, iteration: 276
+Run with min_child_weight = 5, subsample = 0.5, col_sample_bytree = 0.5, score: 0.469092, iteration: 106
+Run with min_child_weight = 5, subsample = 0.5, col_sample_bytree = 0.6, score: 0.469092, iteration: 106
+Run with min_child_weight = 5, subsample = 0.5, col_sample_bytree = 0.7, score: 0.469092, iteration: 106
+Run with min_child_weight = 5, subsample = 0.5, col_sample_bytree = 0.8, score: 0.469092, iteration: 106
+Run with min_child_weight = 5, subsample = 0.5, col_sample_bytree = 0.9, score: 0.469092, iteration: 106
+Run with min_child_weight = 5, subsample = 0.5, col_sample_bytree = 1, score: 0.469092, iteration: 106
+Run with min_child_weight = 5, subsample = 0.6, col_sample_bytree = 0.5, score: 0.469045, iteration: 91
+Run with min_child_weight = 5, subsample = 0.6, col_sample_bytree = 0.6, score: 0.469045, iteration: 91
+Run with min_child_weight = 5, subsample = 0.6, col_sample_bytree = 0.7, score: 0.469045, iteration: 91
+Run with min_child_weight = 5, subsample = 0.6, col_sample_bytree = 0.8, score: 0.469045, iteration: 91
+Run with min_child_weight = 5, subsample = 0.6, col_sample_bytree = 0.9, score: 0.469045, iteration: 91
+Run with min_child_weight = 5, subsample = 0.6, col_sample_bytree = 1, score: 0.469045, iteration: 91
+Run with min_child_weight = 5, subsample = 0.7, col_sample_bytree = 0.5, score: 0.467622, iteration: 207
+Run with min_child_weight = 5, subsample = 0.7, col_sample_bytree = 0.6, score: 0.467622, iteration: 207
+Run with min_child_weight = 5, subsample = 0.7, col_sample_bytree = 0.7, score: 0.467622, iteration: 207
+Run with min_child_weight = 5, subsample = 0.7, col_sample_bytree = 0.8, score: 0.467622, iteration: 207
+Run with min_child_weight = 5, subsample = 0.7, col_sample_bytree = 0.9, score: 0.467622, iteration: 207
+Run with min_child_weight = 5, subsample = 0.7, col_sample_bytree = 1, score: 0.467622, iteration: 207
+Run with min_child_weight = 5, subsample = 0.8, col_sample_bytree = 0.5, score: 0.467274, iteration: 210
+Run with min_child_weight = 5, subsample = 0.8, col_sample_bytree = 0.6, score: 0.467274, iteration: 210
+Run with min_child_weight = 5, subsample = 0.8, col_sample_bytree = 0.7, score: 0.467274, iteration: 210
+Run with min_child_weight = 5, subsample = 0.8, col_sample_bytree = 0.8, score: 0.467274, iteration: 210
+Run with min_child_weight = 5, subsample = 0.8, col_sample_bytree = 0.9, score: 0.467274, iteration: 210
+Run with min_child_weight = 5, subsample = 0.8, col_sample_bytree = 1, score: 0.467274, iteration: 210
+Run with min_child_weight = 5, subsample = 0.9, col_sample_bytree = 0.5, score: 0.467279, iteration: 120
+Run with min_child_weight = 5, subsample = 0.9, col_sample_bytree = 0.6, score: 0.467279, iteration: 120
+Run with min_child_weight = 5, subsample = 0.9, col_sample_bytree = 0.7, score: 0.467279, iteration: 120
+Run with min_child_weight = 5, subsample = 0.9, col_sample_bytree = 0.8, score: 0.467279, iteration: 120
+Run with min_child_weight = 5, subsample = 0.9, col_sample_bytree = 0.9, score: 0.467279, iteration: 120
+Run with min_child_weight = 5, subsample = 0.9, col_sample_bytree = 1, score: 0.467279, iteration: 120
+Run with min_child_weight = 5, subsample = 1, col_sample_bytree = 0.5, score: 0.466804, iteration: 137
+Run with min_child_weight = 5, subsample = 1, col_sample_bytree = 0.6, score: 0.466804, iteration: 137
+Run with min_child_weight = 5, subsample = 1, col_sample_bytree = 0.7, score: 0.466804, iteration: 137
+Run with min_child_weight = 5, subsample = 1, col_sample_bytree = 0.8, score: 0.466804, iteration: 137
+Run with min_child_weight = 5, subsample = 1, col_sample_bytree = 0.9, score: 0.466804, iteration: 137
+Run with min_child_weight = 5, subsample = 1, col_sample_bytree = 1, score: 0.466804, iteration: 137

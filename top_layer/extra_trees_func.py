@@ -69,10 +69,10 @@ def get_predictions(train_file, test_file):
 
 	clf = Pipeline([
 	  ('feature_selection', SelectFromModel(
-	  	ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=700,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 1,
-	                            max_depth= 50, min_samples_leaf= 1), threshold='0.5*mean')),
-	  ('classification', ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=700,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 1,
-	                            max_depth= 50, min_samples_leaf= 1) 
+	  	ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=700,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
+	                            max_depth= 50, min_samples_leaf= 5), threshold='0.5*mean')),
+	  ('classification', ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=700,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
+	                            max_depth= 50, min_samples_leaf= 5) 
 		)
 	])
 	print "about to fit"

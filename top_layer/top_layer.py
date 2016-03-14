@@ -4,8 +4,9 @@
 __author__ = 'Orestis Lykouropoulos'
 
 #import built in modules here
-from simplexgb import *
-
+import simplexgb as x
+import ensemble as nn
+import extra_trees_func as rf
 
 import sys
 import xgboost as xgb
@@ -106,10 +107,17 @@ if __name__ == '__main__':
 	# print x[2]
 	# print rf[2]	
 
-	train_probs, validation_probs, test_probs, train_labels, validation_labels, ids_test = run_first_layer_xgb('train.csv', 'test.csv')
-	test = train_probs, validation_probs, test_probs
+	train_file = 'train.csv'
+	test_file = 'test.csv' 
+
+	nn_res = nn.get_predictions(train_file,test_file) #bailey
+	rf_res = rf.get_predictions(train_file, test_file) #jojo
+	train_probs, validation_probs, test_probs, train_labels, validation_labels, ids_test = x.run_first_layer_xgb(train_file, test_file) #orestis
+	x_res = train_probs, validation_probs, test_probs
 	print "run top\n\n\n\n"
-	run_top_xgb(test, test, test, train_labels, validation_labels, ids_test)
+	
+
+	run_top_xgb(nn_res, rf_res, x_res, train_labels, validation_labels, ids_test)
 
 
 

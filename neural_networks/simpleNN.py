@@ -50,7 +50,7 @@ def load_data(data_file):
 def get_training_data(training_file): 
 	ids_train, df = load_data(training_file)
 
-	traindf, valdf = train_test_split(df, test_size = .2)
+	traindf, valdf = train_test_split(df, test_size = .2, random_state = 1)
 
 	features = list(traindf.columns[1:])
 	labels = traindf.columns[0]
@@ -153,9 +153,9 @@ def build_mlp(numFeatures, opts):
 # 
 # Returns network, training function, and validation function to user.
 #
-def setup_network(df, target_var, opts):
+def setup_network(num_features, target_var, opts):
 
-	input_var, network = build_mlp(len(df.columns[1:]),opts)
+	input_var, network = build_mlp(num_features,opts)
 
 	#create loss function 
 	prediction = lasagne.layers.get_output(network)
@@ -293,7 +293,7 @@ def get_neural_net_error(opts, X_train, y_train, X_val, y_val, df):
 	target_var = T.ivector('target')
 
 	#setup Network
-	network, train_fn, val_fn, input_var = setup_network(df, target_var, opts)
+	network, train_fn, val_fn, input_var = setup_network(len(df.columns[1:]), target_var, opts)
 
 	#train network
 	error = train_network(network,train_fn,val_fn,X_train, y_train, X_val, y_val, opts)
@@ -312,11 +312,58 @@ def get_neural_net(opts, X_train, y_train, X_val, y_val, df):
 
 	print("Setting up network...")
 	#setup Network
-	network, train_fn, val_fn, input_var = setup_network(df, target_var, opts)
+	network, train_fn, val_fn, input_var = setup_network(len(df.columns[1:]), target_var, opts)
 
 	print("Starting training...")
 	#train network
-	train_network(network,train_fn,val_fn,X_train, y_train, X_val, y_val, opts)
+	error = train_network(network,train_fn,val_fn,X_train, y_train, X_val, y_val, opts)
+
+	if(error == None):
+		print("NN has NAN error")
+		print(opts)
+		sys.exit(-1)
+
+	return network, input_var
+
+
+#Function: get_neural_net
+#
+#Description: Setup and train a neural network given options and data
+#
+def get_neural_net_default(X_train, y_train, X_val, y_val, df):
+	
+	#Set paramters
+	opts = {
+		'step_size' : .02,				#Step size for gradient updates
+		'momentum' :.9,
+		'num_epochs' : 20,				#Maximum number of epochs during training
+		'batch_size' : 30,				#Batch size used during training
+		'two_hidden_layers': 1,			#1 or 2 hidden layers
+		'hidden_units_1': 30,			#Hidden units in layer 1
+		'hidden_units_2': 10,			#Hidden units in layer 2
+		'dropout_rate_1': .05, 			#Dropout rate between input and layer 1
+		'dropout_rate_2': .05, 			#Dropout rate between layer 1 and layer 2
+		'activation_func_1': 'sigmoid', #Activation function used in layer 1
+		'activation_func_2': 'tanh',	#Activation function used in layer 2
+		'mute_training_output': False,  #Show the stats on training on each iterations
+	}
+
+
+	# Prepare Theano variables
+	target_var = T.ivector('target')
+
+	print("Setting up network...")
+	#setup Network
+	network, train_fn, val_fn, input_var = setup_network(len(X_train[0,0,0:]), target_var, opts)
+
+	print("Starting training...")
+	#train network
+	error = train_network(network,train_fn,val_fn,X_train, y_train, X_val, y_val, opts)
+
+	if(error == None):
+		print("NN has NAN error")
+		print(opts)
+		sys.exit(-1)
 
 	return network, input_var
 
@@ -326,23 +373,6 @@ def get_neural_net(opts, X_train, y_train, X_val, y_val, df):
 # found at https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py#L213
 #
 if __name__ == "__main__":
-
-	#Set paramters
-	opts = {
-		'step_size' : .02,				#Step size for gradient updates
-		'momentum' :.9,
-		'num_epochs' : 20,				#Maximum number of epochs during training
-		'batch_size' : 30,				#Batch size used during training
-		'two_hidden_layers': 1,			#1 or 2 hidden layers
-		'hidden_units_1': 50,			#Hidden units in layer 1
-		'hidden_units_2': 10,			#Hidden units in layer 2
-		'dropout_rate_1': .05, 			#Dropout rate between input and layer 1
-		'dropout_rate_2': .05, 			#Dropout rate between layer 1 and layer 2
-		'activation_func_1': 'sigmoid', #Activation function used in layer 1
-		'activation_func_2': 'tanh',	#Activation function used in layer 2
-		'mute_training_output': False,  #Show the stats on training on each iterations
-	}
-
 	print("Loading training data...")
 	#Load training data 			 
 	Training_Data_File = sys.argv[1]

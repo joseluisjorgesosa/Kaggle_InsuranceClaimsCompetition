@@ -211,7 +211,7 @@ def get_predictions(trainFile,testFile):
 	val_preds = bst.predict(test_DMatrix)
 	test_preds = bst.predict(predict_DMatrix)
 
-	return preds
+	return train_preds, val_preds, test_preds
 
 
 if __name__ == "__main__":

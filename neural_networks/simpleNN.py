@@ -115,12 +115,12 @@ def build_mlp(numFeatures, opts):
 			print(opts['activation_func_1'] + " not valid (1)")
 			sys.exit(-1)
 
-	if(opts['two_hidden_layers'] == True):
-		network = lasagne.layers.DenseLayer(
-					network, num_units=opts['hidden_units_1'],
-					nonlinearity=activation_func_1,
-					W=lasagne.init.GlorotNormal(gain=1))
+	network = lasagne.layers.DenseLayer(
+			network, num_units=opts['hidden_units_1'],
+			nonlinearity=activation_func_1,
+			W=lasagne.init.GlorotNormal(gain=1))
 
+	if(opts['two_hidden_layers'] == True):
 		network = lasagne.layers.DropoutLayer(network, p=opts['dropout_rate_2'], rescale=True)
 
 		if(opts['activation_func_2'] == 'sigmoid'):
@@ -160,12 +160,17 @@ def setup_network(num_features, target_var, opts):
 	#create loss function 
 	prediction = lasagne.layers.get_output(network)
 	loss = lasagne.objectives.categorical_crossentropy(prediction, target_var)
-	loss = loss.mean()
+
+	if 'alpha' in opts:
+		loss = loss.mean() + opts['alpha']*lasagne.regularization.regularize_network_params( network, lasagne.regularization.l2)
+	else:
+		loss = loss.mean() 
 
 	# create parameter update expressions
 	params = lasagne.layers.get_all_params(network, trainable=True)
-	updates = lasagne.updates.nesterov_momentum(loss, params, learning_rate=opts['step_size'], momentum=opts['momentum'])
-	
+	#updates = lasagne.updates.nesterov_momentum(loss, params, learning_rate=opts['step_size'], momentum=opts['momentum'])
+	updates = updates = lasagne.updates.sgd(loss, params, learning_rate=opts['step_size'])
+
 	# use trained network for predictions
 	test_prediction = lasagne.layers.get_output(network, deterministic=True)
 	test_loss = lasagne.objectives.categorical_crossentropy(test_prediction,target_var)
@@ -188,10 +193,8 @@ def setup_network(num_features, target_var, opts):
 #
 def train_network(network,train_fn,val_fn, X_train,y_train, X_val,y_val,opts):
 	epoch = 0
-	prev_err = 10000000
-	delta_err = 1000000
 
-	while epoch < opts['num_epochs'] and delta_err > 1e-6:
+	while epoch < opts['num_epochs']:
 		train_err = 0
 		train_batches = 0
 		start_time = time.time()
@@ -219,10 +222,6 @@ def train_network(network,train_fn,val_fn, X_train,y_train, X_val,y_val,opts):
 			print("  validation loss:\t\t{:.6f}".format(val_err / val_batches))
 			print("  validation accuracy:\t\t{:.2f}%".format(
 	            val_acc / val_batches * 100))
-
-			delta_err = abs((train_err/train_batches) - (prev_err))
-			prev_err = (train_err/train_batches)
-			print("  delta err:\t\t{:.6f}".format(delta_err))
 
 		epoch +=1
 
@@ -330,8 +329,7 @@ def get_neural_net(opts, X_train, y_train, X_val, y_val, df):
 #
 #Description: Setup and train a neural network given options and data
 #
-def get_neural_net_default(X_train, y_train, X_val, y_val, df):
-	
+def get_neural_net_scaled(K,X_train, y_train, X_val, y_val, df):
 	#Set paramters
 	opts = {
 		'step_size' : .02,				#Step size for gradient updates
@@ -368,11 +366,71 @@ def get_neural_net_default(X_train, y_train, X_val, y_val, df):
 	return network, input_var
 
 
+#Function: get_neural_net
+#
+#Description: Setup and train a neural network given options and data
+#
+def get_neural_net_default(X_train, y_train, X_val, y_val, df):
+	
+	#Set paramters
+	opts = {
+		'step_size' : .02,				#Step size for gradient updates
+		'momentum' :.9,
+		'num_epochs' : 20,				#Maximum number of epochs during training
+		'batch_size' : 30,				#Batch size used during training
+		'two_hidden_layers': False,			#1 or 2 hidden layers
+		'hidden_units_1': 30,			#Hidden units in layer 1
+		'hidden_units_2': 10,			#Hidden units in layer 2
+		'dropout_rate_1': .05, 			#Dropout rate between input and layer 1
+		'dropout_rate_2': .05, 			#Dropout rate between layer 1 and layer 2
+		'activation_func_1': 'sigmoid', #Activation function used in layer 1
+		'activation_func_2': 'tanh',	#Activation function used in layer 2
+		'mute_training_output': False,  #Show the stats on training on each iterations
+	}
+
+
+	# Prepare Theano variables
+	target_var = T.ivector('target')
+
+	print("Setting up network...")
+	#setup Network
+	network, train_fn, val_fn, input_var = setup_network(len(X_train[0,0,0:]), target_var, opts)
+
+	print("Starting training...")
+	#train network
+	error = train_network(network,train_fn,val_fn,X_train, y_train, X_val, y_val, opts)
+
+	if(error == None):
+		print("NN has NAN error")
+		print(opts)
+		sys.exit(-1)
+
+	return network, input_var
+
+
 
 # Main is based off of code from example of neural net from Lasagne distribution
 # found at https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py#L213
 #
 if __name__ == "__main__":
+
+	#Set paramters
+	opts = {
+		'step_size' : 1e-3,				#Step size for gradient updates .01
+		'momentum' :.9,
+		'num_epochs' : 50,				#Maximum number of epochs during training
+		'batch_size' : 30,				#Batch size used during training
+		#'alpha': 1e-4,
+		'two_hidden_layers': False,			#1 or 2 hidden layers
+		'hidden_units_1': 100,			#Hidden units in layer 1
+		'hidden_units_2': 0,			#Hidden units in layer 2
+		'dropout_rate_1': 0, 			#Dropout rate between input and layer 1
+		'dropout_rate_2': 0, 			#Dropout rate between layer 1 and layer 2
+		'activation_func_1': 'sigmoid', #Activation function used in layer 1
+		'activation_func_2': 'sigmoid',	#Activation function used in layer 2
+		'mute_training_output': False,  #Show the stats on training on each iterations
+	}
+
 	print("Loading training data...")
 	#Load training data 			 
 	Training_Data_File = sys.argv[1]

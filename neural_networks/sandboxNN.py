@@ -324,7 +324,7 @@ if __name__ == "__main__":
 		'rho' : 1e-6,				#Rho (Adadelta)
 		'beta1' : .9,				#Beta 1 (Adamax)
 		'beta2' : .999,				#Beta 2 (Adamax)
-		'step_size' : 2e-3,			#Step size for gradient updates
+		'step_size' : 1e-3,			#Step size for gradient updates
 		'epsilon' : 1e-8,			#Used to control how quickly step size decreases for Adagrad/Adamax
 		'num_epochs' : 10,			#Maximum number of epochs during training
 		'batch_size' : 10,			#Batch size used during training

@@ -1,17 +1,18 @@
 import pandas as pd
 
-def average_preds(f1, f2, f3):
+def average_preds(flist):
 	'''
-	Load the 3 results
+	Load the results list and return averaged results
 	'''
-	df1 = pd.read_csv(f1)
-	df2 = pd.read_csv(f2)
-	df3 = pd.read_csv(f3)
+	dflist = [None] * len(flist)
+	for i in range(len(flist)):
+		dflist[i] = pd.read_csv(flist[i])
+	
+	dftotal = dflist[0]
+	for df in dflist[1:]:
+		dftotal = dftotal.add(df)
 
-	df_med = df1.add(df2)
-	df_final = df_med.add(df3)
-
-	return df_final.multiply(1/3.0)
+	return dftotal.multiply(1.0/len(flist))
 
 def get_ids(test_data):
 	df = pd.read_csv(test_data)
@@ -29,6 +30,6 @@ def write_results(preds, ids_test):
 	submission.close()
 
 if __name__ == '__main__':
-	preds = average_preds('orestis.csv', 'bailey.csv', 'jojo.csv')
-	ids = get_ids('orestis.csv')
+	preds = average_preds(['sample_submission.csv', 'sample_submission.csv', 'sample_submission.csv'])
+	ids = get_ids('sample_submission.csv')
 	write_results(preds['PredictedProb'], ids)

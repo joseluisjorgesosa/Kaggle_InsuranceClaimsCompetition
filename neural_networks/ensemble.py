@@ -207,7 +207,9 @@ def get_predictions(trainFile,testFile):
 
 	print("Making XGBoost predictions...")
 	#prediction
-	preds = bst.predict(predict_DMatrix)
+	train_preds = bst.predict(train_DMatrix)
+	val_preds = bst.predict(test_DMatrix)
+	test_preds = bst.predict(predict_DMatrix)
 
 	return preds
 

@@ -70,7 +70,7 @@ if __name__=="__main__":
 	ids_test, predict_df = load_data(sys.argv[2]) #data set to predict values for
 
 	#split training set 80/20 and train on 80% use 20% to evaluate
-	traindf, evaldf = train_test_split(df, test_size = 0.20, random_state=1)
+	traindf, evaldf = train_test_split(df, test_size = 0.20)
 
 	features = list(traindf.columns[1:])
 	labels = traindf.columns[0]
@@ -80,21 +80,16 @@ if __name__=="__main__":
 	#specify parameters
 	# current optimal 6, 0.1, 5, 0.7, 0.8
 	#or maybe 6, 0.1, 1, 0.5, 0.4
-	#latest 1200 - 10, 0.01 1 1 0.8 0.8
-	param = {'max_depth':10, 'eta':0.1, 'min_child_weight':1, 'silent':1, 'objective':'binary:logistic', 'eval_metric':'logloss', 'subsample':1, 'col_sample_bytree':0.8 }
+	param = {'max_depth':10, 'eta':0.01, 'min_child_weight':1, 'silent':1, 'objective':'binary:logistic', 'eval_metric':'logloss', 'subsample':0.8, 'col_sample_bytree':0.8 }
 
 	#specify validation set to watch performance
 	watchlist  = [(train_DMatrix,'train'), (eval_DMatrix,'eval')]
-	num_round = 2000
-	
-	cv = xgb.cv(param, train_DMatrix, num_round, 5, watchlist, early_stopping_rounds=100, verbose_eval=True)
-	print cv
-	print('Done with cv')
-	bst = xgb.train(param, train_DMatrix, num_round, watchlist, early_stopping_rounds=100)
+	num_round = 1200
+	bst = xgb.train(param, train_DMatrix, num_round, watchlist)#, early_stopping_rounds=10)
 
 	#prediction
 	predict_DMatrix = xgb.DMatrix(predict_df)
-	preds = bst.predict(predict_DMatrix, ntree_limit=bst.best_ntree_limit)
+	preds = bst.predict(predict_DMatrix)
 	write_results(preds, ids_test)
 
 	# write_stats('xgb_stats', test, bst.best_score, bst.best_iteration)

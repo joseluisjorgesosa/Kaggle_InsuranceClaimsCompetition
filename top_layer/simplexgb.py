@@ -61,7 +61,7 @@ def run_first_layer_xgb(training_csv_file, testing_csv_file, seed = 1, validatio
 
 	#specify validation set to watch performance
 	watchlist  = [(train_DMatrix,'train'), (eval_DMatrix,'eval')]
-	num_round = 20
+	num_round = 2000
 	param = {'max_depth':10, 'eta':0.01, 'min_child_weight':1, 'silent':1, 'objective':'binary:logistic', 'eval_metric':'logloss', 'subsample':1, 'col_sample_bytree':0.8 }
 
 	print('Training. Don\'t hold your breath...')

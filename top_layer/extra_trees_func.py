@@ -69,9 +69,9 @@ def get_predictions(train_file, test_file):
 
 	clf = Pipeline([
 	  ('feature_selection', SelectFromModel(
-	  	ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=700,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
+	  	ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=10,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
 	                            max_depth= 50, min_samples_leaf= 5), threshold='0.5*mean')),
-	  ('classification', ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=700,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
+	  ('classification', ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=10,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
 	                            max_depth= 50, min_samples_leaf= 5) 
 		)
 	])

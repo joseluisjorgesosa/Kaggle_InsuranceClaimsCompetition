@@ -3,7 +3,6 @@ import pandas as pd
 from sklearn import preprocessing
 from sklearn.preprocessing import normalize
 from sklearn.cross_validation import train_test_split
-import matplotlib.pyplot as plt
 import time 
 import theano
 import theano.tensor as T

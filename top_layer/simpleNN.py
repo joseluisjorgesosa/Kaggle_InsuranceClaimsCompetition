@@ -373,15 +373,15 @@ def get_neural_net_default(X_train, y_train, X_val, y_val, df):
 	
 	#Set paramters
 	opts = {
-		'step_size' : .02,				#Step size for gradient updates
+		'step_size' : .01,				#Step size for gradient updates
 		'momentum' :.9,
 		'num_epochs' : 20,				#Maximum number of epochs during training
 		'batch_size' : 30,				#Batch size used during training
 		'two_hidden_layers': False,			#1 or 2 hidden layers
 		'hidden_units_1': 30,			#Hidden units in layer 1
-		'hidden_units_2': 10,			#Hidden units in layer 2
-		'dropout_rate_1': .05, 			#Dropout rate between input and layer 1
-		'dropout_rate_2': .05, 			#Dropout rate between layer 1 and layer 2
+		'hidden_units_2': 0,			#Hidden units in layer 2
+		'dropout_rate_1': 0, 			#Dropout rate between input and layer 1
+		'dropout_rate_2': 0, 			#Dropout rate between layer 1 and layer 2
 		'activation_func_1': 'sigmoid', #Activation function used in layer 1
 		'activation_func_2': 'tanh',	#Activation function used in layer 2
 		'mute_training_output': False,  #Show the stats on training on each iterations

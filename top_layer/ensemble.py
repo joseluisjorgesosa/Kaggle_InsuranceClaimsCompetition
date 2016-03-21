@@ -167,7 +167,7 @@ def get_predictions(trainFile,testFile):
 	print("Loading testing data...")
 	X_test,ids_test = snn.get_test_data(testFile)
 
-	k= 131
+	k= 2
 	X_train_groups, X_val_groups, X_test_groups = make_feature_groups(k,X_train,X_val,X_test)
 
 
@@ -226,7 +226,7 @@ if __name__ == "__main__":
 	X_test,ids_test = snn.get_test_data(sys.argv[2])
 
 	#Split data into groups of k features
-	k= 3
+	k= 2
 	X_train_groups, X_val_groups, X_test_groups = make_feature_groups(k,X_train,X_val,X_test)
 
 	#Build networks

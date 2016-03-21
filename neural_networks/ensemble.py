@@ -211,7 +211,7 @@ def get_predictions(trainFile,testFile):
 	val_preds = bst.predict(test_DMatrix)
 	test_preds = bst.predict(predict_DMatrix)
 
-	return train_preds, val_preds, test_preds
+	return train_predictions, val_predictions, test_predictionss
 
 
 if __name__ == "__main__":
@@ -226,7 +226,7 @@ if __name__ == "__main__":
 	X_test,ids_test = snn.get_test_data(sys.argv[2])
 
 	#Split data into groups of k features
-	k= 3
+	k= 2
 	X_train_groups, X_val_groups, X_test_groups = make_feature_groups(k,X_train,X_val,X_test)
 
 	#Build networks
@@ -270,7 +270,7 @@ if __name__ == "__main__":
 	preds = bst.predict(predict_DMatrix)
 
 	print("Writing final predictions to file")
-	results_file = sys.argv[3]+ "_k_3" + "_Depth_6"+"_.csv"
+	results_file = sys.argv[3]+ "_k_2" + "_Depth_6"+"_.csv"
 	write_preds_to_file(results_file, preds)
 
 

@@ -69,9 +69,9 @@ def get_predictions(train_file, test_file):
 
 	clf = Pipeline([
 	  ('feature_selection', SelectFromModel(
-	  	ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=10,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
+	  	ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=700,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
 	                            max_depth= 50, min_samples_leaf= 5), threshold='0.5*mean')),
-	  ('classification', ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=10,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
+	  ('classification', ExtraTreesClassifier(verbose=1, n_jobs=-1, n_estimators=700,max_features= 'sqrt',criterion= 'entropy',min_samples_split= 5,
 	                            max_depth= 50, min_samples_leaf= 5) 
 		)
 	])
@@ -86,21 +86,22 @@ def get_predictions(train_file, test_file):
 	#cross_score = scores.mean()
 	cross_score = 0
 	print "about to predict"
-	y_predict_train = clf.predict(X)
-	y_predict_test = clf.predict(X_test)
+	y_predict_train = clf.predict_proba(X)
+	y_predict_test = clf.predict_proba(X_test)
 
 	print "done predicting"
 	score = clf.score(X_test,Y_test)
-	mse_train = mean_squared_error(y_predict_train, Y)
-	mse_test = mean_squared_error(y_predict_test, Y_test)
-	print("train: " + str(mse_train) + " cross_score : " +  str(cross_score) + " test: " + str(mse_test) + " score: " + str(score))
+	#mse_train = mean_squared_error(y_predict_train, Y)
+	#mse_test = mean_squared_error(y_predict_test, Y_test)
+	#print("train: " + str(mse_train) + " cross_score : " +  str(cross_score) + " test: " + str(mse_test) + " score: " + str(score))
 	
 
 	#prediction for testing data
 	preds = clf.predict_proba(predict_df)
 
-	predictions = [y_predict_train, y_predict_test, preds]
-
+	predictions = [y_predict_train[:,1], y_predict_test[:,1], preds[:,1]]
+	print "this is it"
+	print y_predict_train[:,1]
 	return predictions
 
 '''	

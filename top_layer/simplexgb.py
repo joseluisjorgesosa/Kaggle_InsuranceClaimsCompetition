@@ -61,22 +61,22 @@ def run_first_layer_xgb(training_csv_file, testing_csv_file, seed = 1, validatio
 
 	#specify validation set to watch performance
 	watchlist  = [(train_DMatrix,'train'), (eval_DMatrix,'eval')]
-	num_round = 2000
-	param = {'max_depth':10, 'eta':0.01, 'min_child_weight':1, 'silent':1, 'objective':'binary:logistic', 'eval_metric':'logloss', 'subsample':1, 'col_sample_bytree':0.8 }
+	num_round = 70
+	param = {'max_depth':6, 'eta':0.1, 'min_child_weight':5, 'silent':1, 'objective':'binary:logistic', 'eval_metric':'logloss', 'subsample':.7, 'col_sample_bytree':0.8 }
 
 	print('Training. Don\'t hold your breath...')
-	bst = xgb.train(param, train_DMatrix, num_round, watchlist, early_stopping_rounds=10)
+	bst = xgb.train(param, train_DMatrix, num_round, watchlist)#, early_stopping_rounds=20)
 
 	print('Calculating predictions based on model...')
 	#predictions on training data
-	train_probs = bst.predict(train_DMatrix, ntree_limit=bst.best_ntree_limit)
+	train_probs = bst.predict(train_DMatrix)#, ntree_limit=bst.best_ntree_limit)
 
 	#predictions on validation data
-	validation_probs = bst.predict(eval_DMatrix, ntree_limit=bst.best_ntree_limit)
+	validation_probs = bst.predict(eval_DMatrix)#, ntree_limit=bst.best_ntree_limit)
 
 	#predictions on test data
 	predict_DMatrix = xgb.DMatrix(predict_df)
-	test_probs = bst.predict(predict_DMatrix, ntree_limit=bst.best_ntree_limit)
+	test_probs = bst.predict(predict_DMatrix)#, ntree_limit=bst.best_ntree_limit)
 
 	print('Done')
 	return train_probs, validation_probs,  test_probs, traindf[labels], evaldf[labels], ids_test
